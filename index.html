@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rachel Wells — Luxury on a Budget Travel Concierge</title>
+  <meta name="description" content="Sample portfolio for a luxury-on-a-budget travel advisor with itinerary highlights, offerings, process, and a link to the client questionnaire." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1115; --panel:#151a23; --ink:#ecf0f6; --muted:#adb6c2; --line:#23293a;
+      --gold1:#e7c873; --gold2:#caa654; --accent:linear-gradient(135deg,var(--gold1),var(--gold2));
+      --radius:18px; --shadow:0 12px 32px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:
+      radial-gradient(1100px 700px at 100% -10%, rgba(231,200,115,.06), transparent),
+      radial-gradient(900px 600px at -15% 30%, rgba(202,166,84,.07), transparent),
+      var(--bg);
+      color:var(--ink);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;
+      line-height:1.6}
+    .wrap{width:min(1100px,92vw);margin:0 auto;padding:28px 0 72px}
+
+    /* HERO */
+    .hero{position:relative;border-radius:calc(var(--radius) + 6px);padding:42px;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0)),var(--panel);box-shadow:var(--shadow);overflow:hidden}
+    .hero:after{content:"";position:absolute;inset:-80px -60px auto auto;width:380px;height:380px;border-radius:50%;opacity:.25;filter:blur(6px);
+      background:radial-gradient(130px 130px at 50% 50%, rgba(231,200,115,.22), transparent 70%),
+                 conic-gradient(from 0deg, rgba(231,200,115,.16), rgba(202,166,84,.05), rgba(231,200,115,.16));}
+    .logo{display:inline-flex;align-items:center;gap:12px;font-family:"Playfair Display",serif;font-weight:700;letter-spacing:.5px}
+    .logo-mark{width:22px;height:22px;border-radius:6px;background:var(--accent);box-shadow:0 6px 16px rgba(202,166,84,.35)}
+    .title{font-family:"Playfair Display",serif;font-weight:700;line-height:1.15;margin:14px 0 10px;font-size:clamp(28px,4.3vw,48px)}
+    .subtitle{color:var(--muted);max-width:65ch;font-size:clamp(14px,1.8vw,18px)}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+    .btn{appearance:none;border:none;border-radius:14px;padding:14px 18px;font-weight:700;letter-spacing:.3px;cursor:pointer}
+    .btn-primary{background:var(--accent);color:#141414;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25),0 10px 22px rgba(202,166,84,.25)}
+    .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+    .brandline{height:3px;width:100%;background:var(--accent);border-radius:999px;box-shadow:0 6px 24px rgba(202,166,84,.25);margin:16px 0 18px}
+
+    /* SECTION */
+    section{margin-top:22px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0)),#141923;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+    h2{font-family:"Playfair Display",serif;font-size:24px;margin:0 0 12px;font-weight:600}
+    p.lead{color:var(--muted);margin-top:-4px}
+
+    /* GRID */
+    .grid{display:grid;gap:16px}
+    .g-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .g-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media (max-width:860px){.g-2,.g-3{grid-template-columns:1fr}}
+
+    /* LISTS */
+    .pill-list{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 0}
+    .pill{border:1px solid #2a3146;background:#0f131b;border-radius:999px;padding:10px 14px;font-size:14px}
+
+    /* HIGHLIGHTS */
+    .hl{display:grid;gap:14px}
+    .hl-item{border:1px solid #23293a;background:#101520;border-radius:14px;padding:16px}
+    .hl-title{font-weight:700}
+    .muted{color:var(--muted)}
+
+    /* STEPS */
+    .steps{counter-reset:step}
+    .step{position:relative;padding-left:44px;margin:10px 0}
+    .step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:999px;background:var(--accent);color:#141414;display:grid;place-items:center;font-weight:800}
+
+    /* FOOTER NOTE */
+    .note{color:var(--muted);font-size:13px;margin-top:4px}
+
+    a.inline{color:var(--ink);text-decoration:none;border-bottom:1px dotted rgba(231,200,115,.6)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="logo"><span class="logo-mark"></span> Luxury Without Limits</div>
+      <div class="brandline"></div>
+      <h1 class="title">Rachel Wells — Luxury on a Budget Travel Concierge</h1>
+      <p class="subtitle">Travel beautifully, spend smartly. I design polished, stress‑free itineraries that blend boutique stays, hidden‑gem dining, and curated experiences — all tailored to your budget, destination, and vibe.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://forms.gle/YOUR_FORM_ID" target="_blank" rel="noopener">Start Your Trip — Fill the Questionnaire</a>
+        <a class="btn btn-ghost" href="#highlights">View Sample Itinerary Highlights</a>
+      </div>
+    </header>
+
+    <!-- What I Do -->
+    <section class="card">
+      <h2>What I Do</h2>
+      <p class="lead">Concierge‑style planning for trips that feel five‑star — without the five‑star price tag.</p>
+      <div class="grid g-2">
+        <div>
+          <ul>
+            <li><strong>Custom Itineraries (3–10 days)</strong> — daily plans with hotels, dining, activities</li>
+            <li><strong>Luxury on a Budget Curation</strong> — premium experiences that fit your price range</li>
+            <li><strong>Hidden Gems & Day Trips</strong> — upscale yet local, photo‑ready moments</li>
+            <li><strong>Elegant Deliverables</strong> — a polished, printable PDF itinerary</li>
+          </ul>
+        </div>
+        <div>
+          <div class="pill-list">
+            <span class="pill">Boutique Hotels</span>
+            <span class="pill">Upscale Dining</span>
+            <span class="pill">Spas & Wellness</span>
+            <span class="pill">Nightlife & Rooftops</span>
+            <span class="pill">Beaches & Sunsets</span>
+            <span class="pill">Museums & Culture</span>
+          </div>
+          <p class="note">Packages start at <strong>$25</strong> for 3‑day trips. Turnaround: 2–3 business days after your questionnaire.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trip Types -->
+    <section class="card">
+      <h2>Types of Trips I Plan</h2>
+      <div class="pill-list">
+        <span class="pill">Romantic Escapes ✨</span>
+        <span class="pill">Girls’ Getaways 🥂</span>
+        <span class="pill">Wellness & Reset Retreats 🌿</span>
+        <span class="pill">City Adventures 🏙️</span>
+        <span class="pill">Coastal Vacations 🌊</span>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="card">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step"><strong>Complete the Travel Questionnaire</strong> — share destination, dates, budget, and vibe.</div>
+        <div class="step"><strong>Receive a Draft Outline in 24 hours</strong> — we’ll confirm the direction before I build the full plan.</div>
+        <div class="step"><strong>Get Your Final Itinerary</strong> — a curated, printable PDF with hotels, dining, experiences, and day‑by‑day flow.</div>
+      </div>
+      <div class="cta" style="margin-top:16px">
+        <a class="btn btn-primary" href="https://forms.gle/YOUR_FORM_ID" target="_blank" rel="noopener">Fill Out the Questionnaire</a>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section id="highlights" class="card">
+      <h2>Recent Sample Itinerary Highlights</h2>
+      <div class="grid g-3 hl">
+        <div class="hl-item">
+          <div class="hl-title">Paris & Nice — 5 Days</div>
+          <div class="muted">Stay:</div>
+          Hôtel Le Six (boutique 4⭐)
+          <div class="muted" style="margin-top:6px">Dine:</div>
+          Café de Flore; rooftop at Le Georges
+          <div class="muted" style="margin-top:6px">Experiences:</div>
+          Seine sunset cruise; coastal train to Nice; old‑town stroll & gelato
+        </div>
+        <div class="hl-item">
+          <div class="hl-title">Tulum — 4 Days</div>
+          <div class="muted">Stay:</div>
+          Habitas Tulum (eco‑lux)
+          <div class="muted" style="margin-top:6px">Dine:</div>
+          Raw Love Café; Hartwood
+          <div class="muted" style="margin-top:6px">Experiences:</div>
+          Cenote swim; sunrise beach yoga; private chef dinner under lights
+        </div>
+        <div class="hl-item">
+          <div class="hl-title">Nashville — 3 Days</div>
+          <div class="muted">Stay:</div>
+          Noelle, Nashville
+          <div class="muted" style="margin-top:6px">Dine:</div>
+          Henrietta Red; Pinewood Social
+          <div class="muted" style="margin-top:6px">Experiences:</div>
+          Live honky‑tonk crawl; spa afternoon; golden‑hour photos on the Pedestrian Bridge
+        </div>
+      </div>
+      <p class="note" style="margin-top:12px">Full sample PDFs available upon request. Each plan is tailored to your budget and preferences.</p>
+    </section>
+
+    <!-- Footer CTA only (no contact section per request) -->
+    <section class="card">
+      <h2>Ready to Plan?</h2>
+      <p class="lead">Tell me about your trip and I’ll start curating within 24 hours.</p>
+      <a class="btn btn-primary" href="https://forms.gle/YOUR_FORM_ID" target="_blank" rel="noopener">Open the Trip Planning Form</a>
+      <p class="note">Replace <em>YOUR_FORM_ID</em> with your actual Google Form link.</p>
+    </section>
+  </div>
+</body>
+</html>
